@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Change | Remove focus</title>
+  <style>
+    .color-box {
+      background-color: limegreen;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="color-box"></div>
+  <input type="text" placeholder="Type a color here!" class="color-input">
+  <script>
+    const inpt = document.querySelector('.color-input');
+    const square = document.querySelector('.color-box');
+    inpt.addEventListener("change", function () {
+      square.style.backgroundColor = inpt.value;
+    });
+    // inpt.addEventLister("change", function () {
+    //   console.log(inpt.value);
+    //   square.style.backgroundColor = inpt.value;
+    // });
+  </script>
+
+</body>
+
+</html>

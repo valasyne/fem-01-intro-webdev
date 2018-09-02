@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Copy text from input to caption</title>
+</head>
+
+<body>
+  <input placeholder="Type into me" class="input-to-copy">
+  <p class="p-to-copy-to">Nothing has happened yet.</p>
+  <script>
+    const inpt = document.querySelector('.input-to-copy');
+    const paragrph = document.querySelector('.p-to-copy-to');
+    inpt.addEventListener("keyup", function () {
+      paragrph.innerText = inpt.value;
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM | Squares</title>
+  <!-- <style>
+    .red-square {
+      width: 100px;
+      height: 100px;
+      background-color: crimson;
+    }
+  </style> -->
+</head>
+
+<body>
+  <ul>
+    <li class="js-target">Unchanged</li>
+    <li class="js-target">Unchanged</li>
+    <li>Won't change</li>
+    <li class="js-target">Unchanged</li>
+    <li>Won't change</li>
+    <li class="js-target">Unchanged</li>
+  </ul>
+
+  <!-- <div class="red-square"></div>
+  <div class="red-square"></div> -->
+  <script>
+    const elementsToChange = document.querySelectorAll('.js-target');
+    for (let i = 0; i < elementsToChange.length; i++) {
+      const element = elementsToChange[i];
+      element.innerText = "Modified by JS!"
+    }
+    // const square = document.querySelectorAll('.red-square');
+    // square.style.backgroundColor = 'limegreen';
+  </script>
+
+</body>
+
+</html>

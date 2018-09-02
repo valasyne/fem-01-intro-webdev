@@ -1,0 +1,91 @@
+.main-brand {
+  /* color: red; */
+  font-size: 60px;
+  text-align: center;
+  font-weight: normal;
+  margin: 60px 0;
+  font-family: 'Great Vibes', cursive;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.story {
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+.story-image {
+  width: 100%;
+}
+
+.story-title {
+  font-style: italic;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.story-text {
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.quarter {
+  flex: 1;
+  /* flex-grow: 1; */
+}
+
+.half {
+  flex: 2;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-item {
+  width: 100%;
+  /* take as much space as you possibly can */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 30px;
+  color: #999;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.three-quarters {
+  flex: 3;
+  /* border: 1px solid #333; */
+  /* margin: 5px; */
+}
+
+.nav-item:nth-child(1) {
+  background-color: aliceblue;
+}
+.nav-item:nth-child(2) {
+  background-color: dodgerblue;
+}
+.nav-item:nth-child(3) {
+  background-color: aquamarine;
+}
+.nav-item:nth-child(4) {
+  background-color: lightcoral;
+}
+.nav-item:nth-child(5) {
+  background-color: lightblue;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #777;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
